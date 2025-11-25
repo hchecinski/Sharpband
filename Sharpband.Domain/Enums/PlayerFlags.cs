@@ -2,5 +2,5 @@
 
 public enum PlayerFlags
 {
-    IsTrapImmune
+    TrapImmune
 }

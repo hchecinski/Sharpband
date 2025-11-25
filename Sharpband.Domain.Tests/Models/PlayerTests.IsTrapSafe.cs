@@ -2,7 +2,7 @@
 
 namespace Sharpband.Domain.Tests.Models;
 
-public class PlayerTests
+public partial class PlayerTests
 {
     [Fact]
     public void IsTrapSafe_HasTrapImmune_True()

@@ -5,6 +5,9 @@ namespace Sharpband.Domain.Models;
 
 public class Player
 {
+    public int TrapSafeTurns { get; set; } = 0;
+    public IEnumerable<PlayerFlags> Flags { get; set; } = new List<PlayerFlags>();
+
     public Player() { }
     public Player(IEnumerable<PlayerFlags> flags)
     {
@@ -14,13 +17,9 @@ public class Player
         }
     }
 
-    public bool IsTrapImmune { get; set; } = false;
-    public int TrapSafeTurns { get; set; } = 0;
-    public IEnumerable<PlayerFlags> Flags { get; set; } = new List<PlayerFlags>();
-
     public bool IsTrapSafe()
     {
-        return TrapSafeTurns > 0 || IsTrapImmune;
+        return TrapSafeTurns > 0 || HasFlag(PlayerFlags.TrapImmune);
     }
 
     public bool HasFlag(PlayerFlags flag)

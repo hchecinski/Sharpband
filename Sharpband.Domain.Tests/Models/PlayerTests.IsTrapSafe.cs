@@ -1,4 +1,5 @@
-﻿using Sharpband.Domain.Models;
+﻿using Sharpband.Domain.Enums;
+using Sharpband.Domain.Models;
 
 namespace Sharpband.Domain.Tests.Models;
 
@@ -7,7 +8,7 @@ public partial class PlayerTests
     [Fact]
     public void IsTrapSafe_HasTrapImmune_True()
     {
-        Player player = new Player() { IsTrapImmune = true };
+        Player player = new Player([PlayerFlags.TrapImmune]);
 
         var result = player.IsTrapSafe();
 

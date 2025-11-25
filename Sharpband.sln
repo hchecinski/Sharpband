@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpband.Domain", "Sharpband.Domain\Sharpband.Domain.csproj", "{6E04432E-C7E3-47C6-9ABF-6C98B91F8DF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpband.Domain", "Sharpband.Domain\Sharpband.Domain.csproj", "{6E04432E-C7E3-47C6-9ABF-6C98B91F8DF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpband.Domain.Tests", "Sharpband.Domain.Tests\Sharpband.Domain.Tests.csproj", "{EEF09B8A-F116-496F-8825-12965D1BB19F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpband.Domain.Tests", "Sharpband.Domain.Tests\Sharpband.Domain.Tests.csproj", "{EEF09B8A-F116-496F-8825-12965D1BB19F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpband.Application", "Sharpband.Application\Sharpband.Application.csproj", "{A67BAE7A-B246-46F9-B27D-A5C1384D2F01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpband.Infrastructure", "Sharpband.Infrastructure\Sharpband.Infrastructure.csproj", "{D42F99CE-D278-45CC-A2E1-F64C7D7A322A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{EEF09B8A-F116-496F-8825-12965D1BB19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEF09B8A-F116-496F-8825-12965D1BB19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEF09B8A-F116-496F-8825-12965D1BB19F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67BAE7A-B246-46F9-B27D-A5C1384D2F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67BAE7A-B246-46F9-B27D-A5C1384D2F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67BAE7A-B246-46F9-B27D-A5C1384D2F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67BAE7A-B246-46F9-B27D-A5C1384D2F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D42F99CE-D278-45CC-A2E1-F64C7D7A322A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42F99CE-D278-45CC-A2E1-F64C7D7A322A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D42F99CE-D278-45CC-A2E1-F64C7D7A322A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D42F99CE-D278-45CC-A2E1-F64C7D7A322A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

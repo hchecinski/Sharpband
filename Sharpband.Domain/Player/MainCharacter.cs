@@ -1,15 +1,12 @@
-﻿
-using Sharpband.Domain.Enums;
+﻿namespace Sharpband.Domain.Player;
 
-namespace Sharpband.Domain.Models;
-
-public class Player
+public class MainCharacter
 {
     public int TrapSafeTurns { get; set; } = 0;
     public IEnumerable<PlayerFlags> Flags { get; set; } = new List<PlayerFlags>();
 
-    public Player() { }
-    public Player(IEnumerable<PlayerFlags> flags)
+    public MainCharacter() { }
+    public MainCharacter(IEnumerable<PlayerFlags> flags)
     {
         if(flags is not null && flags.Any())
         {

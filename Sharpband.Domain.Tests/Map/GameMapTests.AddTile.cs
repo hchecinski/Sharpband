@@ -1,7 +1,6 @@
-﻿using Sharpband.Domain.Enums;
-using Sharpband.Domain.Models;
+﻿using Sharpband.Domain.Map;
 
-namespace Sharpband.Domain.Tests.Models;
+namespace Sharpband.Domain.Tests.Map;
 
 public partial class GameMapTests
 {

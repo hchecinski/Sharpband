@@ -1,4 +1,4 @@
-﻿namespace Sharpband.Domain.Enums;
+﻿namespace Sharpband.Domain.Player;
 
 public enum PlayerFlags
 {

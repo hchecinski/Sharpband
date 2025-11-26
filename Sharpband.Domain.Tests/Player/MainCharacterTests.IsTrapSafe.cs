@@ -1,14 +1,13 @@
-﻿using Sharpband.Domain.Enums;
-using Sharpband.Domain.Models;
+﻿using Sharpband.Domain.Player;
 
-namespace Sharpband.Domain.Tests.Models;
+namespace Sharpband.Domain.Tests.Player;
 
 public partial class PlayerTests
 {
     [Fact]
     public void IsTrapSafe_HasTrapImmune_True()
     {
-        Player player = new Player([PlayerFlags.TrapImmune]);
+        MainCharacter player = new ([PlayerFlags.TrapImmune]);
 
         var result = player.IsTrapSafe();
 
@@ -18,7 +17,7 @@ public partial class PlayerTests
     [Fact]
     public void IsTrapSafe_TrapSafeTurnsAboveZero_True()
     {
-        Player player = new Player() { TrapSafeTurns = 1 };
+        MainCharacter player = new () { TrapSafeTurns = 1 };
 
         var result = player.IsTrapSafe();
 
@@ -28,7 +27,7 @@ public partial class PlayerTests
     [Fact]
     public void IsTrapSafe_NoTrapImmuneAndNoTrapSafeTurns_False()
     {
-        Player player = new Player();
+        MainCharacter player = new ();
 
         var result = player.IsTrapSafe();
 

@@ -1,14 +1,13 @@
-﻿using Sharpband.Domain.Enums;
-using Sharpband.Domain.Models;
+﻿using Sharpband.Domain.Player;
 
-namespace Sharpband.Domain.Tests.Models;
+namespace Sharpband.Domain.Tests.Player;
 
 public partial class PlayerTests
 {
     [Fact]
     public void HasFlag_HasTrapImmuneFlag_True()
     {
-        Player player = new Player(new List<PlayerFlags>() { PlayerFlags.TrapImmune });
+        MainCharacter player = new(new List<PlayerFlags>() { PlayerFlags.TrapImmune });
 
         bool result = player.HasFlag(PlayerFlags.TrapImmune);
 
@@ -18,7 +17,7 @@ public partial class PlayerTests
     [Fact]
     public void HasFlag_PlayerWithoutFlags_False()
     {
-        Player player = new Player();
+        MainCharacter player = new();
 
         bool result = player.HasFlag(PlayerFlags.TrapImmune);
 

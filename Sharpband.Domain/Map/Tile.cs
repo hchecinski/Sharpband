@@ -1,6 +1,4 @@
-﻿using Sharpband.Domain.Enums;
-
-namespace Sharpband.Domain.Models;
+﻿namespace Sharpband.Domain.Map;
 
 public class Tile
 {

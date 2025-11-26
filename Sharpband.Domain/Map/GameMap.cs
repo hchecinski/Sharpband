@@ -1,10 +1,8 @@
-﻿using Sharpband.Domain.Enums;
-
-namespace Sharpband.Domain.Models;
+﻿namespace Sharpband.Domain.Map;
 
 public class GameMap
 {
-    private readonly List<Tile> _tiles = new List<Tile>();
+    private readonly List<Tile> _tiles = new();
 
     public bool CanEnter(int x, int y)
     {
